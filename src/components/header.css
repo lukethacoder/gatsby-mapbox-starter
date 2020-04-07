@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+}
+
+header div {
+  max-width: 720px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 16px 24px;
+  background-color: rebeccapurple;
+  pointer-events: auto;
+}
+
+header div nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+header div nav ul li {
+  margin: 0;
+}
+
+header div nav ul li a {
+  color: white;
+  text-decoration: none;
+}

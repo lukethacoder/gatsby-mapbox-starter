@@ -1,0 +1,20 @@
+.mapboxgl-popup-content {
+  padding: 0;
+}
+
+.mapbox__popup_wrapper {
+  background-color: #222;
+  padding: 8px;
+}
+.mapbox__popup_wrapper h3 {
+  color: white;
+  font-size: 18px;
+  padding: 0 16px 0 0;
+}
+.mapbox__popup_wrapper p {
+  color: white;
+  margin: 0;
+}
+.mapboxgl-popup-close-button{
+  color: white;
+}

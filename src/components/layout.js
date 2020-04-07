@@ -26,18 +26,38 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <p>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a
+              href="https://www.gatsbyjs.org"
+              style={{
+                margin: "0 0 0 4px",
+                color: "white",
+                textDecoration: "none",
+              }}
+            >
+              Gatsby
+            </a>
+            <span
+              style={{
+                margin: "0 4px",
+                color: "white",
+              }}
+            >
+              {" "}
+              |{" "}
+            </span>
+            <a
+              href="#"
+              style={{ margin: 0, color: "white", textDecoration: "none" }}
+            >
+              View on Github
+            </a>
+          </p>
         </footer>
       </div>
     </>

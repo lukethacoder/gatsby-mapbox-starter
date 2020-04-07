@@ -1,7 +1,26 @@
+footer {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  display: flex;
+  margin: 0;
+  color: white;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow: hidden;
 }
 body {
   margin: 0;
@@ -29,8 +48,8 @@ video {
   display: inline-block;
 }
 audio:not([controls]) {
-  display: none;
   height: 0;
+  display: none;
 }
 progress {
   vertical-align: baseline;
@@ -73,9 +92,9 @@ small {
 }
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 sub {
@@ -101,8 +120,8 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  box-sizing: content-box;
   height: 0;
+  box-sizing: content-box;
   overflow: visible;
 }
 button,
@@ -149,10 +168,10 @@ fieldset {
   padding: 0.35em 0.625em 0.75em;
 }
 legend {
+  max-width: 100%;
+  display: table;
   box-sizing: border-box;
   color: inherit;
-  display: table;
-  max-width: 100%;
   padding: 0;
   white-space: normal;
 }
@@ -187,7 +206,7 @@ textarea {
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 * {
   box-sizing: inherit;
@@ -200,7 +219,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -410,6 +429,7 @@ pre {
   padding: 1.45rem;
 }
 table {
+  width: 100%;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -421,7 +441,6 @@ table {
   font-size: 1rem;
   line-height: 1.45rem;
   border-collapse: collapse;
-  width: 100%;
 }
 fieldset {
   margin-left: 0;
@@ -474,6 +493,7 @@ iframe {
   margin-bottom: 1.45rem;
 }
 hr {
+  height: 1px;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -484,7 +504,6 @@ hr {
   margin-bottom: calc(1.45rem - 1px);
   background: hsla(0, 0%, 0%, 0.2);
   border: none;
-  height: 1px;
 }
 address {
   margin-left: 0;
